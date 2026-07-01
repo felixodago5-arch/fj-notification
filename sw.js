@@ -1,4 +1,4 @@
-const CACHE = 'fj-notify-v1';
+const CACHE = 'fj-notify-v2';
 const SHELL = ['/', '/index.html', '/manifest.json'];
 
 self.addEventListener('install', e => {
