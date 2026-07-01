@@ -525,7 +525,7 @@ function showModalMsg(type, text) {
 </script>
     <script>
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('/fj-notification/sw.js', { scope: '/fj-notification/' })
         .then(() => console.log('%c✅ SW registered', 'color:#14b8a6'))
         .catch(e => console.warn('SW failed:', e));
 }
