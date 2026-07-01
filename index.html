@@ -523,5 +523,12 @@ function showModalMsg(type, text) {
     el.textContent = text;
 }
 </script>
+    <script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('%c✅ SW registered', 'color:#14b8a6'))
+        .catch(e => console.warn('SW failed:', e));
+}
+</script>
 </body>
 </html>
